@@ -1,6 +1,6 @@
 # JavaScript Snippets for Sublime
 
-![Demo](http://i.imgur.com/2EO8qpM.gifv)
+![Demo](https://cloud.githubusercontent.com/assets/13405318/14079717/9e54ccd0-f4f7-11e5-8a57-928883aeb973.gif)
 
 ## Install
 
