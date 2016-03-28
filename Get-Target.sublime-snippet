@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+var ${1:MainClick} = GetTarget('${2:node}');
+
+function ${3:On_Click}() {
+
+	// call the .target method and assign it to a variable
+  	var pTarget = ${1:MainClick}.target();
+
+  	// use .parent to access the nth parent and .name to access the name of the node 
+  	switch(pTarget.parent(1).name) {
+
+    case '${4:match 1}':
+      // do something
+    break;
+
+    case '${5:match 2}':
+      // do something
+    break;
+
+    case '${6:match 3}':
+      // do something
+    break;
+
+    default:
+      // default case
+    break;
+  }
+}
+]]></content>
+	<tabTrigger>GetTarget</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Get Target Object.</description>
+</snippet>
+
+
+

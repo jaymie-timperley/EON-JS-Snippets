@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+intersected
+]]></content>
+	<tabTrigger>intersected</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Wandifier - Returns a boolean if the isector is currently intersecting.</description>
+</snippet>

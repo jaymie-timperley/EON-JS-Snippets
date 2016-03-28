@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+GA.setProperty('${1:property}', ${2:value}, ${3:obj});
+]]></content>
+	<tabTrigger>GA.setProperty</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Set a property of specified object.</description>
+</snippet>

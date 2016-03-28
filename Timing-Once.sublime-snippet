@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+Timing.RegisterEvent('ONCE', ${1:time}, ${2:null}, ${3:function() {
+	
+	// do something
+}});
+]]></content>
+	<tabTrigger>Timing</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   ONCE - Trigger event ONCE at given time.</description>
+</snippet>
+
+
+

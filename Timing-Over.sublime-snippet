@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+Timing.RegisterEvent('OVER', ${1:time}, ${2:null}, ${3:function() {
+	
+	//do something
+}});
+]]></content>
+	<tabTrigger>Timing</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   OVER - Trigger event every frame OVER given time.</description>
+</snippet>
+
+
+

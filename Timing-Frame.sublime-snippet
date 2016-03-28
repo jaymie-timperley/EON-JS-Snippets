@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+Timing.RegisterEvent('FRAME', ${1:null}, ${2:function() {
+	
+	//do something
+}});
+]]></content>
+	<tabTrigger>Timing</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   FRAME - Trigger event every FRAME.</description>
+</snippet>
+
+
+

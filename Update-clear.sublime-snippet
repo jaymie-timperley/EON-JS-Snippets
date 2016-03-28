@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+Update.clear();
+]]></content>
+	<tabTrigger>Update.clear</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Clear the update queue.</description>
+</snippet>
+
+
+

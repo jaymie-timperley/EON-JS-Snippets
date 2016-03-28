@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+console.list(${1:object});
+]]></content>
+	<tabTrigger>console.list</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Log out an object in a list format.</description>
+</snippet>
+
+
+

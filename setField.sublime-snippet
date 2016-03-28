@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+GA.setField(${1:node}, '${2:field}', ${3:value});
+]]></content>
+	<tabTrigger>GA.setField</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Set field of a specified node.</description>
+</snippet>
+

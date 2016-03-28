@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+reset;
+]]></content>
+	<tabTrigger>reset</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Wandifier - Removes all excludes from both main and reticle exclude groups.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+alert('${1:message}', ${2:title});
+]]></content>
+	<tabTrigger>alert</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Wrapper for eon MessageBox.</description>
+</snippet>
+
+
+

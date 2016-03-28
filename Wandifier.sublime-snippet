@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+var ${1:wand} = Wandifier('${2:node}', ${3:countDown}, ${4:wandFunc}, ${5:true});
+
+function ${4:wandFunc}(${6:target}) {
+
+	// log out current targets name
+    console.log(${6:target});
+
+
+    switch(${6:target}.name) {
+
+    	case '${7:match 1}':
+	      // do something
+	    break;
+
+	    case '${8:match 2}':
+	      // do something
+	    break;
+
+	    case '${9:match 3}':
+	      // do something
+	    break;
+
+	    default:
+	      // default case
+	    break;
+
+    }
+}
+]]></content>
+	<tabTrigger>Wandifier</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Wandifier Object.</description>
+</snippet>
+
+
+

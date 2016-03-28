@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+countDown
+]]></content>
+	<tabTrigger>countDown</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Wandifier - View and change the countDown value.</description>
+</snippet>

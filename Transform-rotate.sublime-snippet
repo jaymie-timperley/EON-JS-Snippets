@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+Transform.rotate('${1:node}', [${2:1},${3:0},${4:0}], ${5:laptime}, ${6:true});
+]]></content>
+	<tabTrigger>Transform.rotate</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Rotate a frame on given axis at specified laptime.</description>
+</snippet>
+
+
+

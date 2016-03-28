@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+Timing.RegisterEvent('OVER_EVERY', ${1:time}, ${2:every}, ${3:null}, ${4:function() {
+	
+	//do something
+}});
+]]></content>
+	<tabTrigger>Timing</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   OVER_EVERY - Trigger event EVERY x OVER given time.</description>
+</snippet>
+
+
+

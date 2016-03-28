@@ -1,0 +1,10 @@
+/*
+{
+    "scope": "source.js, source.jsx",
+
+    "completions":
+    [
+    	{"trigger": "Timing\tTrigger event once at given time is reached.", "contents": "ONCE, time, null, function() {\n\n});"}
+    ]
+}
+*/

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+console.log('${1:message}');
+]]></content>
+	<tabTrigger>console.log</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Log's out a message to the console.</description>
+</snippet>
+
+
+

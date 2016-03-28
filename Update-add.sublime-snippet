@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+Update.add(function() {
+
+	// something to update every frame
+	${1:}
+});
+]]></content>
+	<tabTrigger>Update.add</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Add function to the update queue, this will trigger every FRAME.</description>
+</snippet>
+
+
+
