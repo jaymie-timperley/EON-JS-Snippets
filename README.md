@@ -1,6 +1,6 @@
-# JavaScript Snippets for Sublime [![Build Status](https://github.com/jaymie-timperley/EON-JS-Snippets.svg?branch=master)](https://github.com/jaymie-timperley/EON-JS-Snippets)
+# JavaScript Snippets for Sublime
 
-![Demo](http://gph.is/1PAz3c5)
+![Demo](http://i.imgur.com/2EO8qpM.gifv)
 
 ## Install
 
