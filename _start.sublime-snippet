@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+start
+]]></content>
+	<tabTrigger>start</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to start current node, play or unhide/start movement.</description>
+</snippet>

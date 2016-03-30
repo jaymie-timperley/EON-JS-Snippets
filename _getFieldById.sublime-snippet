@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+getFieldById(${1:id}).value;
+]]></content>
+	<tabTrigger>getFieldById</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Get specified field by id of current node.</description>
+</snippet>

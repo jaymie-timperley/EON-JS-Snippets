@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+diffuseColor
+]]></content>
+	<tabTrigger>diffuseColor</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the diffuseColor field of current node.</description>
+</snippet>

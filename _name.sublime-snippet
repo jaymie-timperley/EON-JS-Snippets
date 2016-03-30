@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+name
+]]></content>
+	<tabTrigger>name</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Returns the name of the node you are currently accessing.</description>
+</snippet>
+
+
+

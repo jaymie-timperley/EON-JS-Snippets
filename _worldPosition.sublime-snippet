@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+worldPosition
+]]></content>
+	<tabTrigger>worldPosition</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the worldPosition field of current node.</description>
+</snippet>

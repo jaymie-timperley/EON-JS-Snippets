@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+position
+]]></content>
+	<tabTrigger>position</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the position field of current node.</description>
+</snippet>

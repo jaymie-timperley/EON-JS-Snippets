@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+parentName(${1:num});
+]]></content>
+	<tabTrigger>parentName</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access nth parent name of current node.</description>
+</snippet>

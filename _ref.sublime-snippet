@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+ref
+]]></content>
+	<tabTrigger>ref</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Returns a reference to the node you are currently accessing.</description>
+</snippet>
+
+
+

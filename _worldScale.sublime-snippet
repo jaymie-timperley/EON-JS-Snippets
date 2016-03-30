@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+worldScale
+]]></content>
+	<tabTrigger>worldScale</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the worldScale field of current node.</description>
+</snippet>

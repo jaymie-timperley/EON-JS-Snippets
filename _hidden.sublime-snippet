@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+hidden
+]]></content>
+	<tabTrigger>hidden</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the hidden field of current node.</description>
+</snippet>

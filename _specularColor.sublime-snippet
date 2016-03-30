@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+specularColor
+]]></content>
+	<tabTrigger>specularColor</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the specularColor field of current node.</description>
+</snippet>

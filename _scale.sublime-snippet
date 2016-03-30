@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+scale
+]]></content>
+	<tabTrigger>scale</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the scale field of current node.</description>
+</snippet>

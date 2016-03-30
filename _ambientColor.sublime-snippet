@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+ambientColor
+]]></content>
+	<tabTrigger>ambientColor</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the ambientColor field of current node.</description>
+</snippet>

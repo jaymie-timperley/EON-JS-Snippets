@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+worldOrientation
+]]></content>
+	<tabTrigger>worldOrientation</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to access/set the worldOrientation field of current node.</description>
+</snippet>

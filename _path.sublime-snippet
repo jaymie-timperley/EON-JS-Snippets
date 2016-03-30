@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+path
+]]></content>
+	<tabTrigger>path</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Returns the full simulation path of the current node.</description>
+</snippet>
+
+
+
