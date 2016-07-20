@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+AnimationController(${1:'groupName'});
+]]></content>
+	<tabTrigger>AnimationController</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to control several animation nodes easily.</description>
+</snippet>
+
