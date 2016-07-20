@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+AudioController(${1:'groupName'});
+]]></content>
+	<tabTrigger>AudioController</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to control several audio nodes easily.</description>
+</snippet>
+
