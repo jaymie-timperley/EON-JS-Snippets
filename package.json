@@ -1,6 +1,6 @@
 {
   "name": "EON-JS-snippets",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Sublime Text snippets for Custom JavaScript Library in Eon Studio",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "keywords": [
     "javascript",
     "eon",
-    "studion",
+    "studio",
     "eonjs"
   ],
   "author": "Jaymie Timperley",
