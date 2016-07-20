@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+find(${1:name}, ${3:depth});
+]]></content>
+	<tabTrigger>find</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to find all nodes of specified name from this node.</description>
+</snippet>
+

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+GV.DEBUG = true;
+]]></content>
+	<tabTrigger>GV</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>Debug all library events.</description>
+</snippet>
+
