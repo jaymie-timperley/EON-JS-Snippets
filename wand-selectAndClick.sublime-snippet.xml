@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+selectAndClick(${1:true},${2:fieldName});
+]]></content>
+	<tabTrigger>selectAndClick</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Wandifier - Turn on the selectAndClick Mode.</description>
+</snippet>
