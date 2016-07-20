@@ -1,9 +1,6 @@
 <snippet>
 	<content><![CDATA[
-Transform.position('${1:node}', [${2:0},${3:0},${4:0}], ${5:time}, ${6:function() {
-
-	//do something	
-}});
+Transform.position('${1:node}', [${2:0},${3:0},${4:0}], ${5:time});
 ]]></content>
 	<tabTrigger>Transform.position</tabTrigger>
 	<scope>source.js, source.jsx</scope>
