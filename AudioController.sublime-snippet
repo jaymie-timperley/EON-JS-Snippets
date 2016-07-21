@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-AudioController(${1:'groupName'});
+var ${1:Audio} =  AudioController(${2:'groupName'});
 ]]></content>
 	<tabTrigger>AudioController</tabTrigger>
 	<scope>source.js, source.jsx</scope>
