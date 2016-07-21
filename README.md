@@ -12,7 +12,7 @@ If you prefer to install it manually, you can download the package and put it in
 
 ## Timing Object
 
-### [Timing] Timing.RegisterEvent('ONCE
+### Timing.RegisterEvent('```ONCE```
 
 ```javascript
 Timing.RegisterEvent('ONCE', time, null, function() {
@@ -21,7 +21,7 @@ Timing.RegisterEvent('ONCE', time, null, function() {
 });
 ```
 
-### [Timing] Timing.RegisterEvent('OVER
+### Timing.RegisterEvent('```OVER```
 
 ```javascript
 Timing.RegisterEvent('OVER', time, null, function() {
@@ -30,7 +30,7 @@ Timing.RegisterEvent('OVER', time, null, function() {
 });
 ```
 
-### [Timing] Timing.RegisterEvent('OVER_EVERY
+### Timing.RegisterEvent('```OVER_EVERY```
 
 ```javascript
 Timing.RegisterEvent('OVER_EVERY', time, every, null, function() {
@@ -39,7 +39,7 @@ Timing.RegisterEvent('OVER_EVERY', time, every, null, function() {
 });
 ```
 
-### [Timing] Timing.RegisterEvent('EVERY
+### Timing.RegisterEvent('```EVERY```
 
 ```javascript
 Timing.RegisterEvent('EVERY', time, null, function() {
@@ -48,7 +48,7 @@ Timing.RegisterEvent('EVERY', time, null, function() {
 });
 ```
 
-### [Timing] Timing.RegisterEvent('FRAME
+### Timing.RegisterEvent('```FRAME```
 
 ```javascript
 Timing.RegisterEvent('FRAME', null, function() {
@@ -59,33 +59,593 @@ Timing.RegisterEvent('FRAME', null, function() {
 
 ## Global Actions 
 
-### [GA.setField] GA.setField
+### GA.```setField```
 
 ```javascript
 GA.setField('node', 'field', value);
 ```
 
-### [GA.getField] GA.getField
+### GA.```getField```
 
 ```javascript
 GA.getField('node', 'field');
 ```
 
-### [GA.getNode] GA.getNode
+### GA.```getNode```
 
 ```javascript
 GA.getNode('node');
 ```
 
-### [GA.setProperty] GA.setProperty
+### GA.```setProperty```
 
 ```javascript
 GA.setProperty('property', value, object);
 ```
 
+### GA.```find```
+
+```javascript
+GA.find('name', root, depth);
+```
+
+## Transform
+
+### Transform.```position```
+
+```javascript
+Transform.position('node', [position], time);
+```
+
+### Transform.```orientation```
+
+```javascript
+Transform.orientation('node', [orientation], time);
+```
+
+### Transform.```scale```
+
+```javascript
+Transform.scale('node', [scale], time);
+```
+
+### Transform.```other```
+
+```javascript
+Transform.other('node', 'field', value, time);
+```
+
+### Transform.```rotate```
+
+```javascript
+Transform.rotate('node', [axis], laptime, state);
+```
+
+### Transform.```position``` *with callback*
+
+```javascript
+Transform.position('node', [position], time, function() {
+    // do something
+});
+```
+
+### Transform.```orientation``` *with callback*
+
+```javascript
+Transform.orientation('node', [orientation], time, function() {
+    // do something
+});
+```
+
+### Transform.```scale``` *with callback*
+
+```javascript
+Transform.scale('node', [scale], time, function() {
+    // do something
+});
+```
+
+### Transform.```other``` *with callback*
+
+```javascript
+Transform.other('node', 'field', value, time, function() {
+    // do something
+});
+```
+
+## Node Object
+
+### .```name```
+
+```javascript
+var box = GA.getNode('Box1');
+
+eon.Trace(box.name);
+// Box1
+```
+
+### .```ref```
+
+```javascript
+var box = GA.getNode('Box1');
+
+eon.Trace(box.ref);
+// returns a reference to the current node.
+```
+
+### .```path```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.path
+// Simulation!Scene!_PUT-YOUR-SCENE-HERE_!Box1
+```
+
+### .```count```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.count;
+// 2
+```
+
+### .```start```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.start;
+```
+
+### .```stop```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.stop;
+```
+
+### .```getField```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.getField('Position').value;
+
+//parameters
+.getField(field, debug, source);
+
+.getField('SetRun', 'DEBUG', 'ClickSensor function');
+```
+
+### .```setField```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.setField('Position',[5,5,5]);
+
+//parameters
+.setField(field, setvalue, debug, source);
+
+.setField('SetRun', true, 'DEBUG', 'ClickSensor function');
+```
+
+### .```getFieldById```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.getFieldById(7).value;
+// returns the value of the nodes 7th field (position in this case)
+```
+
+### .```setFieldById```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.setFieldById(7, [9,9,9]);
+// sets the value of the nodes 7th field (position in this case) to 9,9,9
+```
+
+### .```parent```
+
+```javascript
+// using eon methods
+var box     = eon.FindNode('Box1');
+var parent4 = box.GetParentNode().GetParentNode().GetParentNode().GetParentNode();
+
+
+// using library
+var box = GA.getNode('Box1');
+
+box.parent(4);
+// returns the nodes 4th parent
+
+box.parent();
+// if no argument is given the first parent will be returned.
+```
+
+### .```parentName```
+
+```javascript
+// using eon methods
+var box     = eon.FindNode('Box1');
+var parent4 = box.GetParentNode().GetParentNode().GetParentNode().GetParentNode();
+var name    = eon.GetNodeName(parent4);
+
+
+// using library
+var box = GA.getNode('Box1');
+
+// acessing name after accesing nth parent
+box.parent(4).name;
+
+// accessing nth parent and returning name directly
+box.parentName(4);
+```
+
+### .```parentRef```
+
+```javascript
+// using eon methods
+var box     = eon.FindNode('Box1');
+var parent4 = box.GetParentNode().GetParentNode().GetParentNode().GetParentNode();
+
+
+// using library
+var box = GA.getNode('Box1');
+
+// acessing ref after accesing nth parent
+box.parent(4).ref;
+
+// accessing nth parent and returning ref directly
+box.parentRef(4);
+```
+
+### .```child```
+
+```javascript
+// using eon methods
+var box     = eon.FindNode('Box1');
+var treeCh  = box.GetFieldByName('TreeChildren');
+var child1  = treeCh.GetMFElement(0);
+
+
+// using library
+var box = GA.getNode('Box1');
+
+box.child(1);
+// returns the nodes 1st child.
+
+box.child();
+// if no argument is given the first child will be returned.
+```
+
+### .```childName```
+
+```javascript
+// using eon methods
+var box     = eon.FindNode('Box1');
+var treeCh  = box.GetFieldByName('TreeChildren');
+var child1  = treeCh.GetMFElement(0);
+var name    = eon.GetNodeName(child1);
+
+
+// using library
+var box = GA.getNode('Box1');
+
+// acessing name after accesing nth child
+box.child(2).name;
+
+// accessing nth child and returning name directly
+box.childName(2);
+```
+
+### .```childRef```
+
+```javascript
+// using eon methods
+var box     = eon.FindNode('Box1');
+var treeCh  = box.GetFieldByName('TreeChildren');
+var child1  = treeCh.GetMFElement(0);
+
+
+// using library
+var box = GA.getNode('Box1');
+
+// acessing ref after accesing nth parent
+box.child(4).ref;
+
+// accessing nth parent and returning ref directly
+box.childRef(4);
+```
+
+### .```fieldCount```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.fieldCount;
+// returns 23, the number of field the box1 node has.
+```
+
+### .```find```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.find('shape');
+
+box.find('name', depth);
+// Returns a collection of node-objects.
+```
+
+### .```show```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.show;
+// shows the box
+```
+
+### .```hide```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.hide;
+// shows the box
+```
+
+### .```position```
+
+```javascript
+var box = GA.getNode('Box1');
+// starts with a position of [15,0,0]
+
+box.position;
+// 15,0,0
+// returns the value of the current nodes position
+
+box.position.x;
+// 15
+// returns the value of the current nodes x position
+
+box.position = [43,2,19];
+// changes position
+
+box.position;
+// 43,2,19
+
+box.position.x = 4;
+// changes the value of the x axis only
+```
+
+### .```orientation```
+
+```javascript
+var box = GA.getNode('Box1');
+// starts with a orientation of [3,6,9]
+
+box.orientation;
+// 3,6,9
+// returns the value of the current nodes orientation
+
+box.orientation.y;
+// 6
+// returns the value of the current nodes y orientation
+
+box.orientation = [7,14,21];
+// changes orientation
+
+box.orientation;
+// 7,14,21
+```
+
+### .```scale```
+
+```javascript
+var box = GA.getNode('Box1');
+// starts with a scale of [1,1,1]
+
+box.scale;
+// 1,1,1
+// returns the value of the current nodes scale
+
+box.scale.z;
+// 1
+// returns the value of the current nodes z scale
+
+box.scale = [2,2,2];
+// changes scale
+
+box.scale;
+// 2,2,2
+```
+
+### .```hidden```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.hidden;
+// returns false
+
+box.hidden = true;
+// hides the box frame
+```
+
+### .```worldPosition```
+
+```javascript
+var box = GA.getNode('Box1');
+// starts with a worldPosition of [15,0,0]
+
+box.worldPosition;
+// 15,0,0
+// returns the value of the current nodes worldPosition
+
+box.worldPosition.x;
+// 15
+// returns the value of the current nodes x worldPosition
+
+box.worldPosition = [43,2,19];
+// changes worldPosition
+
+box.worldPosition;
+// 43,2,19
+```
+
+### .```worldOrientation```
+
+```javascript
+var box = GA.getNode('Box1');
+// starts with a worldOrientation of [3,6,9]
+
+box.worldOrientation;
+// 3,6,9
+// returns the value of the current nodes worldOrientation
+
+box.worldOrientation.y;
+// 6
+// returns the value of the current nodes y worldOrientation
+
+box.worldOrientation = [7,14,21];
+// changes worldOrientation
+
+box.worldOrientation;
+// 7,14,21
+```
+
+### .```worldScale```
+
+```javascript
+var box = GA.getNode('Box1');
+// starts with a worldScale of [1,1,1]
+
+box.worldScale;
+// 1,1,1
+// returns the value of the current nodes worldScale
+
+box.worldScale.z;
+// 1
+// returns the value of the current nodes z worldScale
+
+box.worldScale = [2,2,2];
+// changes worldScale
+
+box.worldScale;
+// 2,2,2
+```
+
+### .```ambientColor```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.ambientColor = [0.8,0.5,0.3];
+// as the box1 node is a frame and does not have an ambientColor field,
+// nothing will happen, you will get a log stating the node does not have field (n)
+
+
+box.child().child(1).ambientColor = [Math.random(),Math.random(),Math.random()];
+// This has now accessed the first child which is a shape node,
+// and then its 2nd child which is a shaderMaterial
+// then it ambientColor field and applied a random value.
+
+test.child().child(1).ambientColor;
+// this will log out the current value of the field or null if the node does not have an ambientColor field.
+
+/*  Notes : 
+a nodes children always start counting from zero so it's second child would be 1.
+If materials/geometry on shape nodes are often referenced, they will not show up under treechildren.
+However the above code should still work.
+*/
+```
+
+### .```diffuseColor```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.diffuseColor = [0.8,0.5,0.3];
+// as the box1 node is a frame and does not have an diffuseColor field,
+// nothing will happen, you will get a log stating the node does not have field (n)
+
+
+box.child().child(1).diffuseColor = [Math.random(),Math.random(),Math.random()];
+// This has now accessed the first child which is a shape node,
+// and then its 2nd child which is a shaderMaterial
+// then it diffuseColor field and applied a random value.
+
+test.child().child(1).diffuseColor;
+// this will log out the current value of the field or null if the node does not have an diffuseColor field.
+
+/*  Notes : 
+a nodes children always start counting from zero so it's second child would be 1.
+If materials/geometry on shape nodes are often referenced, they will not show up under treechildren.
+However the above code should still work.
+*/
+```
+
+### .```specularColor```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.specularColor = [0.8,0.5,0.3];
+// as the box1 node is a frame and does not have an specularColor field,
+// nothing will happen, you will get a log stating the node does not have field (n)
+
+
+box.child().child(1).specularColor = [Math.random(),Math.random(),Math.random()];
+// This has now accessed the first child which is a shape node,
+// and then its 2nd child which is a shaderMaterial
+// then it specularColor field and applied a random value.
+
+test.child().child(1).specularColor;
+// this will log out the current value of the field or null if the node does not have an specularColor field.
+
+/*  Notes : 
+a nodes children always start counting from zero so it's second child would be 1.
+If materials/geometry on shape nodes are often referenced, they will not show up under treechildren.
+However the above code should still work.
+*/
+```
+
+### .```opacity```
+
+```javascript
+var box = GA.getNode('Box1');
+
+box.opacity = 0.3;
+// as the box1 node is a frame and does not have an opacity field,
+// nothing will happen, you will get a log stating the node does not have field (n)
+
+
+box.child().child(1).opacity = 0.4;
+// This has now accessed the first child which is a shape node,
+// and then its 2nd child which is a shaderMaterial
+// then it opacity field and applied a random value.
+
+test.child().child(1).opacity;
+// this will log out the current value of the field or null if the node does not have an opacity field.
+
+/*  Notes : 
+a nodes children always start counting from zero so it's second child would be 1.
+If materials/geometry on shape nodes are often referenced, they will not show up under treechildren.
+However the above code should still work.
+*/
+```
+
 ## GetTarget Object
 
-### [GetTarget] GetTarget
+### ```GetTarget```
 
 ```javascript
 var MainClick = GetTarget('node');
@@ -119,7 +679,7 @@ function On_Click() {
 
 ## Wandifier Object
 
-### [Wandifier] Wandifier
+### ```Wandifier```
 
 ```javascript
 var wand = Wandifier('node', countDown, wandFunc, true);
@@ -152,7 +712,7 @@ function wandFunc(target) {
 }
 ```
 
-### [Wandifier EP] Wandifier Extended Parameters
+### ```Wandifier Extended Parameters```
 
 ```javascript
 var wand = Wandifier('node', countDown, wandFunc, true, 'Reticle', scaleTo, scaleFrom);
@@ -185,7 +745,7 @@ function wandFunc(target) {
 }
 ```
 
-### [countDown] .countDown
+### ```.countDown```
 
 ```javascript
 
@@ -197,7 +757,7 @@ wand.countDown = 1.5;
 
 ```
 
-### [intersected] .intersected
+### ```.intersected```
 
 ```javascript
 
@@ -206,7 +766,7 @@ wand.intersected
 
 ```
 
-### [exclude] .exclude
+### ```.exclude```
 
 ```javascript
 // exclude single shape
@@ -217,7 +777,7 @@ wand.exclude(['Box1_Shape','Box2_Shape']);
 
 ```
 
-### [reticleExclude] .reticleExclude
+### ```.reticleExclude```
 
 ```javascript
 // exclude single shape
@@ -228,7 +788,7 @@ wand.reticleExclude(['Box1_Shape','Box2_Shape']);
 
 ```
 
-### [removeExclude] .removeExclude
+### ```.removeExclude```
 
 ```javascript
 // remove single shape
@@ -242,7 +802,7 @@ wand.removeExclude('ALL');
 
 ```
 
-### [removeReticleExclude] .removeReticleExclude
+### ```.removeReticleExclude```
 
 ```javascript
 // remove single shape
@@ -256,7 +816,7 @@ wand.removeReticleExclude('ALL');
 
 ```
 
-### [reset] .reset
+### ```.reset```
 
 ```javascript
 // removes all exclusions and resets wandifier
@@ -264,9 +824,33 @@ wand.reset;
 
 ```
 
+### ```.continuous```
+
+```javascript
+// Allows you to continuous click targets.
+wand.continuous = true;
+
+```
+
+### ```.selectAndClick```
+
+```javascript
+Turn on the selectAndClick Mode.
+wand.selectAndClick(true,Click);
+
+```
+
+### ```.ease```
+
+```javascript
+Select ease type to apply to reticle animation.
+wand.ease = 'easeoutback';
+
+```
+
 ## Update 
 
-### [Update.add] Update.add
+### Update.```add```
 
 ```javascript
 Update.add(function() {
@@ -275,7 +859,7 @@ Update.add(function() {
 });
 ```
 
-### [Update.clear] Update.clear
+### Update.```clear```
 
 ```javascript
 Update.clear();
@@ -283,13 +867,13 @@ Update.clear();
 
 ## Console
 
-### [console.log] console.log
+### console.```log```
 
 ```javascript
 console.log('message');
 ```
 
-### [console.list] console.list
+### console.```list```
 
 ```javascript
 console.list(object);
@@ -297,13 +881,27 @@ console.list(object);
 
 ## Alert
 
-### [alert] alert
+### ```alert```
 
 ```javascript
 alert('message', 'title');
 ```
 
+## AudioController Object
 
+### ```AudioController```
+
+```javascript
+var Audio = AudioController('AudioGroup');
+```
+
+## AnimationController Object
+
+### ```AnimationController```
+
+```javascript
+var Animation = AnimationController('AnimationGroup');
+```
 
 
 ## License
