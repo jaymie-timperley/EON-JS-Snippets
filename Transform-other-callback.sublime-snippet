@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+Transform.other('${1:node}', '${2:field}', [${3:0},${4:0},${5:0}], ${6:time}, ${7:function() {
+
+	//do something	
+}});
+]]></content>
+	<tabTrigger>Transform.other</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Transform any other specified field with callback.</description>
+</snippet>
+
+
+
