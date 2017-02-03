@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+addField("${1:field}");
+]]></content>
+	<tabTrigger>addField</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Adds a field to the node object.</description>
+</snippet>
+

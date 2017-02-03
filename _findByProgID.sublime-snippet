@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+findByProgID(${1:id}, ${2:root}, ${3:depth});
+]]></content>
+	<tabTrigger>findByProgID</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Used to find all nodes of specified progID.</description>
+</snippet>
+
