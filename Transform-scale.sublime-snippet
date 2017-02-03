@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-Transform.scale('${1:node}', [${2:0},${3:0},${4:0}], ${5:time});
+Transform.scale("${1:node}", [${2:0},${3:0},${4:0}], ${5:time});
 ]]></content>
 	<tabTrigger>Transform.scale</tabTrigger>
 	<scope>source.js, source.jsx</scope>

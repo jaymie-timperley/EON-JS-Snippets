@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-GA.setProperty('${1:property}', ${2:value}, ${3:obj});
+GA.setProperty("${1:property}", ${2:value}, ${3:obj});
 ]]></content>
 	<tabTrigger>GA.setProperty</tabTrigger>
 	<scope>source.js, source.jsx</scope>

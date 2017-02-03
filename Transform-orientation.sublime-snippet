@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-Transform.orientation('${1:node}', [${2:0},${3:0},${4:0}], ${5:time});
+Transform.orientation("${1:node}", [${2:0},${3:0},${4:0}], ${5:time});
 ]]></content>
 	<tabTrigger>Transform.orientation</tabTrigger>
 	<scope>source.js, source.jsx</scope>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-GA.getNode(${1:node});
+GA.getNode("${1:node}");
 ]]></content>
 	<tabTrigger>GA.getNode</tabTrigger>
 	<scope>source.js, source.jsx</scope>

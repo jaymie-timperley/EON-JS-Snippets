@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+cancel();
+]]></content>
+	<tabTrigger>cancel</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Cancel transform event.</description>
+</snippet>

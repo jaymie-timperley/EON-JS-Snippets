@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-GA.find(${1:name}, '${2:root}', ${3:depth});
+GA.find(${1:name}, "${2:root}", ${3:depth});
 ]]></content>
 	<tabTrigger>GA.find</tabTrigger>
 	<scope>source.js, source.jsx</scope>

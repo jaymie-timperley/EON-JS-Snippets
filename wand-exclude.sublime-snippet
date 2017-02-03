@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-exclude('${1:shapeName}');
+exclude("${1:shapeName}");
 ]]></content>
 	<tabTrigger>exclude</tabTrigger>
 	<scope>source.js, source.jsx</scope>

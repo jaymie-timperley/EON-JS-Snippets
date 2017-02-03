@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-removeExclude('${1:shapeName}');
+removeExclude("${1:shapeName}");
 ]]></content>
 	<tabTrigger>removeExclude</tabTrigger>
 	<scope>source.js, source.jsx</scope>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+resume();
+]]></content>
+	<tabTrigger>resume</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+	<description>   Resume pause event.</description>
+</snippet>

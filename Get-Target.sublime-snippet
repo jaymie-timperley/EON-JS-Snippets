@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var ${1:MainClick} = GetTarget('${2:node}');
+var ${1:MainClick} = GetTarget("${2:node}");
 
 function ${3:On_Click}() {
 
@@ -10,15 +10,15 @@ function ${3:On_Click}() {
   	// use .parent to access the nth parent and .name to access the name of the node 
   	switch(pTarget.parent(1).name) {
 
-    case '${4:match 1}':
+    case "${4:match 1}":
       // do something
     break;
 
-    case '${5:match 2}':
+    case "${5:match 2}":
       // do something
     break;
 
-    case '${6:match 3}':
+    case "${6:match 3}":
       // do something
     break;
 

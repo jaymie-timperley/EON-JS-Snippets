@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-Transform.other('${1:node}', '${2:field}', [${3:0},${4:0},${5:0}], ${6:time}, ${7:function() {
+Transform.other("${1:node}", "${2:field}", [${3:0},${4:0},${5:0}], ${6:time}, ${7:function() {
 
 	//do something	
 }});

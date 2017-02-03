@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-setField('${1:field}', ${2:value});
+setField("${1:field}", ${2:value});
 ]]></content>
 	<tabTrigger>setField</tabTrigger>
 	<scope>source.js, source.jsx</scope>

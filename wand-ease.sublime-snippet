@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-ease = '${1:easeOutBack}';
+ease = "${1:easeOutBack}";
 ]]></content>
 	<tabTrigger>ease</tabTrigger>
 	<scope>source.js, source.jsx</scope>

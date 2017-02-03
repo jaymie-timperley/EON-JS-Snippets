@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-reticleExclude('${1:shapeName}');
+reticleExclude("${1:shapeName}");
 ]]></content>
 	<tabTrigger>reticleExclude</tabTrigger>
 	<scope>source.js, source.jsx</scope>
-	<description>   Wandifier - Allows you to specify any shapes you don't want the reticle to animate for when targeted.</description>
+	<description>   Wandifier - Allows you to specify any shapes you don"t want the reticle to animate for when targeted.</description>
 </snippet>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var ${1:wand} = Wandifier('${2:node}', ${3:countDown}, ${4:wandFunc}, ${5:true}, '${6:Reticle}', ${7:scaleTo}, ${8:scaleFrom});
+var ${1:wand} = Wandifier("${2:node}", ${3:countDown}, ${4:wandFunc}, ${5:true}, "${6:Reticle}", ${7:scaleTo}, ${8:scaleFrom});
 
 function ${4:wandFunc}(${9:target}) {
 
@@ -10,15 +10,15 @@ function ${4:wandFunc}(${9:target}) {
 
     switch(${9:target}.name) {
 
-    	case '${10:match 1}':
+    	case "${10:match 1}":
 	      // do something
 	    break;
 
-	    case '${11:match 2}':
+	    case "${11:match 2}":
 	      // do something
 	    break;
 
-	    case '${12:match 3}':
+	    case "${12:match 3}":
 	      // do something
 	    break;
 

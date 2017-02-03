@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-Timing.RegisterEvent('FRAME', ${1:null}, ${2:function() {
+Timing.registerEvent("FRAME", ${1:null}, ${2:function(ev) {
 	
 	//do something
 }});
