@@ -12,7 +12,7 @@ If you prefer to install it manually, you can download the package and put it in
 
 ## Timing Object
 
-### Timing.RegisterEvent("```ONCE```
+### Timing.registerEvent("```ONCE```
 
 ```javascript
 Timing.registerEvent("ONCE", time, null, function() {
@@ -24,7 +24,7 @@ Timing.registerEvent("ONCE", time, null, function() {
 ### Timing.registerEvent("```OVER```
 
 ```javascript
-Timing.RegisterEvent("OVER", time, null, function() {
+Timing.registerEvent("OVER", time, null, function() {
 	
 	// do something every frame over time.
 });
@@ -33,7 +33,7 @@ Timing.RegisterEvent("OVER", time, null, function() {
 ### Timing.registerEvent("```OVER_EVERY```
 
 ```javascript
-Timing.RegisterEvent("OVER_EVERY", time, every, null, function() {
+Timing.registerEvent("OVER_EVERY", time, every, null, function() {
 	
 	// do something every x seconds over time.
 });
@@ -42,7 +42,7 @@ Timing.RegisterEvent("OVER_EVERY", time, every, null, function() {
 ### Timing.registerEvent("```EVERY```
 
 ```javascript
-Timing.RegisterEvent("EVERY", time, null, function() {
+Timing.registerEvent("EVERY", time, null, function() {
 	
 	// do something every x seconds.
 });
@@ -51,7 +51,7 @@ Timing.RegisterEvent("EVERY", time, null, function() {
 ### Timing.registerEvent("```FRAME```
 
 ```javascript
-Timing.RegisterEvent("FRAME", null, function() {
+Timing.registerEvent("FRAME", null, function() {
 	
 	// do something every frame.
 });
